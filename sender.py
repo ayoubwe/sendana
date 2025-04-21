@@ -103,7 +103,7 @@ except Exception as e:
 
 # Read the subject to be sent to all email addresses in the Excel file
 try:
-    with open("subject.txt", "r") as sbjFile:
+    with open("subject.txt", "r", encoding="utf-8") as sbjFile:
         sbj = sbjFile.read()
     print("✅ Successfully read subject.txt")
 except Exception as e:
@@ -121,7 +121,7 @@ except Exception as e:
 
 # Read sender name from file
 try:
-    with open("sender_name.txt", "r") as name_file:
+    with open("sender_name.txt", "r", encoding="utf-8") as name_file:
         sender_name = name_file.read().strip()
     print("✅ Successfully read sender_name.txt")
 except FileNotFoundError:
