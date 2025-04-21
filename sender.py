@@ -112,7 +112,7 @@ except Exception as e:
 
 # Read the message to be sent to all email addresses in the Excel file
 try:
-    with open("message.txt", "r") as msgFile:
+    with open("message.txt", "r", encoding="utf-8") as msgFile:
         msg = msgFile.read()
     print("✅ Successfully read message.txt")
 except Exception as e:
