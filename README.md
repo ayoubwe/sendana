@@ -98,7 +98,3 @@ email-sender/
 - Make sure all required files are in the correct format and location
 - Check that your email service's SMTP settings are correct
 - Use `run.py` to automatically check for and fix common issues
-
-## License
-
-This project is open source and available under the MIT License.
